@@ -1,0 +1,27 @@
+<div class="container my-3">
+    <form (ngSubmit)="addStudent()" id ="create-course-form" class="my-5">
+      <h3>Add a Student</h3>
+                  <div class="mb-3">
+                      <label htmlFor="name" class="form-label">Name</label>
+                      <input type="text" name="name" [(ngModel)]="name" class="form-control" id="name" aria-describedby="emailHelp" />
+  
+                  </div>
+                  <div class="mb-3">
+                      <label htmlFor="email" class="form-label">Email</label>
+                      <input type="email" name="email" [(ngModel)]="email" class="form-control" id="email" />
+                  </div>
+                  <div class="mb-3">
+                      <label htmlFor="phone" class="form-label">Phone</label>
+                      <input type="number" name="phone" [(ngModel)]="phone" class="form-control" id="phone" />
+                  </div>
+                  <div class="mb-3">
+                      <label htmlFor="city" class="form-label">City</label>
+                      <input type="text" name="city" [(ngModel)]="city" class="form-control" id="city" />
+                  </div>
+                  <div class="mb-3">
+                      <label htmlFor="dp" class="form-label">Image</label>
+                      <input type="file" name="files" (change)="onFileChange($event)" class="form-control" id="dp" />
+                  </div>
+                  <button type="submit" class="btn btn-sm btn-success">Submit</button>
+              </form>
+  </div>
